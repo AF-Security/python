@@ -10,6 +10,7 @@ def main():
 
 def is_even(n):
     if n % 2 == 0:
+# if our argument, n, is divisible by 2 and has a remainder of 0, then it is even (true)
         return True
     else:
         return False
