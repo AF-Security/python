@@ -6,6 +6,27 @@
 # assume the user will only input integers, and ignore any integer that isn't an accepted denomination
 
 def main():
+    number = get_coin()
+    amount_due(number)
+
+def amount_due(n):
+    for _ in range(n):
+        print("")
+
+def get_coin():
+    while True:
+        n = int(input("Insert Coin: "))
+        if n == 5 or n == 10 or n == 25:
+            return n
+main()
+
+
+
+
+
+
+
+def main():
     user_coins = input("Insert Coin: ")
     user_coins = int(user_coins)
     if coin_check(user_coins):  
@@ -24,3 +45,20 @@ def total_input(change):
     
 main()
 
+
+def main():
+    x = input("Insert Coin: ")
+    coin_check(x)
+
+
+def coin_check(coin):
+     coin = int(coin)
+     if coin == 5 or coin == 10 or coin == 25:
+        return coin 
+     
+def running_total(coin):
+    total = total + coin
+    if total < 50:
+        print("Amount Due: " + 50-total)
+
+main()
