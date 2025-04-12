@@ -3,15 +3,15 @@
 
 
 def main():
-    x = get_int()
+    x = get_int("What is x? ")
     print(f"x is equal to {x}")
    
 
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            return int(input("What is x? "))
+            return int(input(prompt))
             # if we are immediately declaring a variable and returning it,
             # may not always be necessary to even define it direclty 
         except ValueError:
