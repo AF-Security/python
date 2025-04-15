@@ -31,6 +31,14 @@ def convert(date):
         "November":11,
         "December:":12
         }
+    month, day = date.split(" ")
+    day, year = date.split(", ")
+
+
+
+
+
+
     month, day, year = date.split("/")
     for text_month in months:
         if month in months.values():
